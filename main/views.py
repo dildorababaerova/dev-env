@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.db.models.manager import BaseManager
 
 from goods.models import Category
 
