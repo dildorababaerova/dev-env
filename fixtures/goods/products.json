@@ -1,0 +1,170 @@
+[
+    {
+        "model": "goods.product",
+        "pk": 1,
+        "fields": {
+            "name": "Kukat",
+            "slug": "kukat",
+            "description": "Hienot kukat",
+            "price": "150.00",
+            "discount_price": "0.00",
+            "image": "",
+            "quantity": 10,
+            "category": 3
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 2,
+        "fields": {
+            "name": "Maljakot",
+            "slug": "maljakot",
+            "description": "Tyylikas maljakko",
+            "price": "93.00",
+            "discount_price": "0.00",
+            "image": "",
+            "quantity": 5,
+            "category": 4
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 3,
+        "fields": {
+            "name": "Enkelit",
+            "slug": "enkelit",
+            "description": "Enkelit",
+            "price": "670.00",
+            "discount_price": "0.00",
+            "image": "",
+            "quantity": 10,
+            "category": 6
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 4,
+        "fields": {
+            "name": "Rasiat",
+            "slug": "rasiat",
+            "description": "Hienot rasiat.",
+            "price": "365.00",
+            "discount_price": "0.00",
+            "image": "",
+            "quantity": 10,
+            "category": 8
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 5,
+        "fields": {
+            "name": "Kanamunia",
+            "slug": "kanamunia",
+            "description": "Eri kokoisia kanamunia.",
+            "price": "430.00",
+            "discount_price": "0.00",
+            "image": "",
+            "quantity": 10,
+            "category": 9
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 6,
+        "fields": {
+            "name": "Kukat",
+            "slug": "monta-kukka",
+            "description": "Hienot kukat.",
+            "price": "610.00",
+            "discount_price": "0.00",
+            "image": "",
+            "quantity": 10,
+            "category": 3
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 7,
+        "fields": {
+            "name": "Erikoiskukka",
+            "slug": "erikoiskukka",
+            "description": "Erikoiskukkia",
+            "price": "55.00",
+            "discount_price": "0.00",
+            "image": "",
+            "quantity": 10,
+            "category": 10
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 8,
+        "fields": {
+            "name": "Elaimia",
+            "slug": "elaimia",
+            "description": "Kilpikonna",
+            "price": "190.00",
+            "discount_price": "0.00",
+            "image": "",
+            "quantity": 10,
+            "category": 5
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 9,
+        "fields": {
+            "name": "Erikoiskananmunat",
+            "slug": "erikoiskananmunat",
+            "description": "Erillaisia kananmunia",
+            "price": "30.00",
+            "discount_price": "0.00",
+            "image": "",
+            "quantity": 20,
+            "category": 11
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 10,
+        "fields": {
+            "name": "Elaimia",
+            "slug": "lintu",
+            "description": "Lintujen perhe",
+            "price": "10.00",
+            "discount_price": "0.00",
+            "image": "",
+            "quantity": 10,
+            "category": 5
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 11,
+        "fields": {
+            "name": "Kukka",
+            "slug": "kukka",
+            "description": "Kukka yksitelleen",
+            "price": "15.00",
+            "discount_price": "0.00",
+            "image": "",
+            "quantity": 10,
+            "category": 12
+        }
+    },
+    {
+        "model": "goods.product",
+        "pk": 12,
+        "fields": {
+            "name": "Talot",
+            "slug": "talot",
+            "description": "Erilaisia taloja",
+            "price": "25.00",
+            "discount_price": "0.00",
+            "image": "",
+            "quantity": 20,
+            "category": 7
+        }
+    }
+]

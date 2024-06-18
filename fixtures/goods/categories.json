@@ -1,0 +1,90 @@
+[
+    {
+        "model": "goods.category",
+        "pk": 2,
+        "fields": {
+            "name": "Kaikki tuotteet",
+            "slug": "kaikki-tuotteet"
+        }
+    },
+    {
+        "model": "goods.category",
+        "pk": 3,
+        "fields": {
+            "name": "Kukat",
+            "slug": "kukat"
+        }
+    },
+    {
+        "model": "goods.category",
+        "pk": 4,
+        "fields": {
+            "name": "Maljakot",
+            "slug": "maljakot"
+        }
+    },
+    {
+        "model": "goods.category",
+        "pk": 5,
+        "fields": {
+            "name": "Elaimia",
+            "slug": "elaimia"
+        }
+    },
+    {
+        "model": "goods.category",
+        "pk": 6,
+        "fields": {
+            "name": "Enkelit",
+            "slug": "enkelit"
+        }
+    },
+    {
+        "model": "goods.category",
+        "pk": 7,
+        "fields": {
+            "name": "Talot",
+            "slug": "talot"
+        }
+    },
+    {
+        "model": "goods.category",
+        "pk": 8,
+        "fields": {
+            "name": "Rasiat",
+            "slug": "rasiat"
+        }
+    },
+    {
+        "model": "goods.category",
+        "pk": 9,
+        "fields": {
+            "name": "Kanamunia",
+            "slug": "kanamunia"
+        }
+    },
+    {
+        "model": "goods.category",
+        "pk": 10,
+        "fields": {
+            "name": "Erikoiskukka",
+            "slug": "erikoiskukka"
+        }
+    },
+    {
+        "model": "goods.category",
+        "pk": 11,
+        "fields": {
+            "name": "Erikoiskananmunat",
+            "slug": "kananmuna"
+        }
+    },
+    {
+        "model": "goods.category",
+        "pk": 12,
+        "fields": {
+            "name": "Kukka",
+            "slug": "kukka"
+        }
+    }
+]
