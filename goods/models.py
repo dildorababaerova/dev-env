@@ -28,5 +28,5 @@ class Product(models.Model):
         verbose_name_plural = 'Tuotteet' 
 
     def __str__(self):
-        return f'{self.name} Määrä - ({self.quantity})'
+        return f'({self.name} Määrä - ({self.quantity}) Hinta - ({self.price}))'
         
