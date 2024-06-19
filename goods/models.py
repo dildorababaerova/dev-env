@@ -28,5 +28,12 @@ class Product(models.Model):
         verbose_name_plural = 'Tuotteet' 
 
     def __str__(self):
-        return f'({self.name} Määrä - ({self.quantity}) Hinta - ({self.price}))'
-        
+        return f'{self.name} Määrä - {self.quantity} Hinta - {self.price}'
+    
+    def display_id(self):
+        return f'{25225+self.id:05}' 
+
+    def sell_price(self):
+        if self.discount_price:
+            return round(self.price-self.price*self.discount_price/100, 2)
+        return self.price 
