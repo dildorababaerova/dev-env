@@ -25,7 +25,8 @@ class Product(models.Model):
 
     class Meta:
         verbose_name = 'Tuote'
-        verbose_name_plural = 'Tuotteet' 
+        verbose_name_plural = 'Tuotteet'
+        ordering = ("id",) 
 
     def __str__(self):
         return f'{self.name} Määrä - {self.quantity} Hinta - {self.price}'
