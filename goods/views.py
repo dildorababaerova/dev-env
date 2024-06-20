@@ -14,7 +14,7 @@ def catalog(request, category_slug, page=1):
     context = {
         'title': 'Etusivu-Catalog',
         'goods': current_page,
-        'slug-url': category_slug
+        'slug_url': category_slug,
     }
     return render(request, 'goods/catalog.html', context)
 
