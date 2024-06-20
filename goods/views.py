@@ -1,9 +1,12 @@
 from django.shortcuts import render
 from .models import Product
 
-def catalog(request):
-
-    goods = Product.objects.all()
+def catalog(request, category_slug):
+    if category_slug == 'kaikki-tuotteet':
+        goods = Product.objects.all()
+    else:
+        goods = Product.objects.filter(category__slug=category_slug)
+    
     context = {
         'title': 'Etusivu-Catalog',
         'goods': goods,
