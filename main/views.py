@@ -4,11 +4,11 @@ from goods.models import Category
 
 def index(request):
 
-    categories = Category.objects.all()
+    
     context = {
         'title': 'Savesta -Etusivu',
         'content': 'SAVESTASSA TEHTYJÄ TUOTTEITA',
-        'categories': categories
+        
         }
     return render(request, 'main/index.html', context) 
 
