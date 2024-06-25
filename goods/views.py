@@ -2,7 +2,10 @@ from django.core.paginator import Paginator
 from django.shortcuts import get_list_or_404, render
 from .models import Product
 
-def catalog(request, category_slug, page=1):
+def catalog(request, category_slug):
+
+    page = request.GET.get('page', 1)
+    
     if category_slug == 'kaikki-tuotteet':
         goods = Product.objects.all()
     else:
