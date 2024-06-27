@@ -86,5 +86,21 @@
             "name": "Kukka",
             "slug": "kukka"
         }
+    },
+    {
+        "model": "goods.category",
+        "pk": 13,
+        "fields": {
+            "name": "Linnut",
+            "slug": "linnut"
+        }
+    },
+    {
+        "model": "goods.category",
+        "pk": 14,
+        "fields": {
+            "name": "Patsat",
+            "slug": "patsat"
+        }
     }
 ]

@@ -1,170 +1,106 @@
 [
     {
-        "model": "goods.product",
-        "pk": 1,
-        "fields": {
-            "name": "Kukat",
-            "slug": "kukat",
-            "description": "Hienot kukat",
-            "price": "150.00",
-            "discount_price": "0.00",
-            "image": "",
-            "quantity": 10,
-            "category": 3
-        }
-    },
-    {
-        "model": "goods.product",
+        "model": "goods.category",
         "pk": 2,
         "fields": {
-            "name": "Maljakot",
-            "slug": "maljakot",
-            "description": "Tyylikas maljakko",
-            "price": "93.00",
-            "discount_price": "0.00",
-            "image": "",
-            "quantity": 5,
-            "category": 4
+            "name": "Kaikki tuotteet",
+            "slug": "kaikki-tuotteet"
         }
     },
     {
-        "model": "goods.product",
+        "model": "goods.category",
         "pk": 3,
         "fields": {
-            "name": "Enkelit",
-            "slug": "enkelit",
-            "description": "Enkelit",
-            "price": "670.00",
-            "discount_price": "0.00",
-            "image": "",
-            "quantity": 10,
-            "category": 6
+            "name": "Kukat",
+            "slug": "kukat"
         }
     },
     {
-        "model": "goods.product",
+        "model": "goods.category",
         "pk": 4,
         "fields": {
-            "name": "Rasiat",
-            "slug": "rasiat",
-            "description": "Hienot rasiat.",
-            "price": "365.00",
-            "discount_price": "0.00",
-            "image": "",
-            "quantity": 10,
-            "category": 8
+            "name": "Maljakot",
+            "slug": "maljakot"
         }
     },
     {
-        "model": "goods.product",
+        "model": "goods.category",
         "pk": 5,
         "fields": {
-            "name": "Kanamunia",
-            "slug": "kanamunia",
-            "description": "Eri kokoisia kanamunia.",
-            "price": "430.00",
-            "discount_price": "0.00",
-            "image": "",
-            "quantity": 10,
-            "category": 9
+            "name": "Elaimia",
+            "slug": "elaimia"
         }
     },
     {
-        "model": "goods.product",
+        "model": "goods.category",
         "pk": 6,
         "fields": {
-            "name": "Kukat",
-            "slug": "monta-kukka",
-            "description": "Hienot kukat.",
-            "price": "610.00",
-            "discount_price": "0.00",
-            "image": "",
-            "quantity": 10,
-            "category": 3
+            "name": "Enkelit",
+            "slug": "enkelit"
         }
     },
     {
-        "model": "goods.product",
+        "model": "goods.category",
         "pk": 7,
         "fields": {
-            "name": "Erikoiskukka",
-            "slug": "erikoiskukka",
-            "description": "Erikoiskukkia",
-            "price": "55.00",
-            "discount_price": "0.00",
-            "image": "",
-            "quantity": 10,
-            "category": 10
+            "name": "Talot",
+            "slug": "talot"
         }
     },
     {
-        "model": "goods.product",
+        "model": "goods.category",
         "pk": 8,
         "fields": {
-            "name": "Elaimia",
-            "slug": "elaimia",
-            "description": "Kilpikonna",
-            "price": "190.00",
-            "discount_price": "0.00",
-            "image": "",
-            "quantity": 10,
-            "category": 5
+            "name": "Rasiat",
+            "slug": "rasiat"
         }
     },
     {
-        "model": "goods.product",
+        "model": "goods.category",
         "pk": 9,
         "fields": {
-            "name": "Erikoiskananmunat",
-            "slug": "erikoiskananmunat",
-            "description": "Erillaisia kananmunia",
-            "price": "30.00",
-            "discount_price": "0.00",
-            "image": "",
-            "quantity": 20,
-            "category": 11
+            "name": "Kanamunia",
+            "slug": "kanamunia"
         }
     },
     {
-        "model": "goods.product",
+        "model": "goods.category",
         "pk": 10,
         "fields": {
-            "name": "Elaimia",
-            "slug": "lintu",
-            "description": "Lintujen perhe",
-            "price": "10.00",
-            "discount_price": "0.00",
-            "image": "",
-            "quantity": 10,
-            "category": 5
+            "name": "Erikoiskukka",
+            "slug": "erikoiskukka"
         }
     },
     {
-        "model": "goods.product",
+        "model": "goods.category",
         "pk": 11,
         "fields": {
-            "name": "Kukka",
-            "slug": "kukka",
-            "description": "Kukka yksitelleen",
-            "price": "15.00",
-            "discount_price": "0.00",
-            "image": "",
-            "quantity": 10,
-            "category": 12
+            "name": "Erikoiskananmunat",
+            "slug": "kananmuna"
         }
     },
     {
-        "model": "goods.product",
+        "model": "goods.category",
         "pk": 12,
         "fields": {
-            "name": "Talot",
-            "slug": "talot",
-            "description": "Erilaisia taloja",
-            "price": "25.00",
-            "discount_price": "0.00",
-            "image": "",
-            "quantity": 20,
-            "category": 7
+            "name": "Kukka",
+            "slug": "kukka"
+        }
+    },
+    {
+        "model": "goods.category",
+        "pk": 13,
+        "fields": {
+            "name": "Linnut",
+            "slug": "linnut"
+        }
+    },
+    {
+        "model": "goods.category",
+        "pk": 14,
+        "fields": {
+            "name": "Patsat",
+            "slug": "patsat"
         }
     }
 ]
