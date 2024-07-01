@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 def login(request):
     context = {
-        'title':'Savesta-Kirjautu sisään'
+        'title':'Savesta-Kirjaudu sisään'
     }
     
     return render(request, 'users/login.html', context)
