@@ -1,53 +1,54 @@
 {% extends "base.html" %}
 {% load static %}
 
+
 {% block container %}
-<!-- Контент на странице -->
-<div class="container mt-5">
-    <div class="card mb-4 custom-shadow">
-        <div class="row">
-            <!-- Миниатюры -->
-            <div class="col-md-4">
-                <img src="{{product.image.url}}"
-                    class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal1">
-            </div>
-            <div class="col-md-4 ">
-                <p class="product_id mt-3">id: {{product.display_id}}</p>
-            </div>
-            <!-- Увеличить изображение в модальном окне -->
-            <div class="modal fade" id="imageModal1" tabindex="-1"
-                aria-labelledby="imageModal1Label" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="imageModal1Label">{{ product.name }}</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                aria-label="Закрыть"></button>
+<div class="row">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-9 bg-white p-4 mb-5 mx-2 rounded custom-shadow">
+                <h2 class="text-center mb-4">Регистрация</h2>
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName" class="form-label">Имя*</label>
+                            <input type="text" class="form-control" id="firstName"
+                                placeholder="Введите ваше имя" required>
                         </div>
-                        <div class="modal-body">
-                            <img src="{{ product.image.url }}"
-                                class="img-fluid" alt="{{ product.name }}">
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName" class="form-label">Фамилия*</label>
+                            <input type="text" class="form-control" id="lastName"
+                                placeholder="Введите вашу фамилию" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="username" class="form-label">Имя пользователя*</label>
+                            <input type="text" class="form-control" id="username"
+                                placeholder="Введите ваше имя пользователя" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="email" class="form-label">Email*</label>
+                            <input type="email" class="form-control" id="email"
+                                placeholder="Введите ваш email" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="password1" class="form-label">Пароль*</label>
+                            <input type="password" class="form-control" id="password1"
+                                placeholder="Введите пароль" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="password2" class="form-label">Подтверждение пароля*</label>
+                            <input type="password" class="form-control" id="password2"
+                                placeholder="Подтвердите пароль" required>
                         </div>
                     </div>
-                </div>
+                    <button type="submit"
+                        class="btn btn-dark btn-block">Зарегистрироваться</button>
+                </form>
             </div>
-        </div>
-        <!-- Описание товара -->
-        <div class="card-body">
-            <p class="card-text">Hinta: <strong>{{ product.sell_price }}</strong></p>
-            <h5 class="card-title">{{ product.name }}</h5>
-            <p class="card-text">{{ product.description }}</p>
-            <a href="#" class="btn btn-dark add-to-cart">Lisä koriin</a>
         </div>
     </div>
 </div>
-
 {% endblock %}
-
-
-
-
-
 
 
 
@@ -64,7 +65,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../deps/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../deps/favicon/favicon-16x16.png">
     <link rel="manifest" href="../deps/favicon/site.webmanifest">
-    <title>Товар</title>
+    <title>Регистрация</title>
 </head>
 
 <body>
@@ -145,8 +146,7 @@
                 </div>
                 <!-- Значек корзины, вызывает модальное окно -->
                 <div>
-                    <button type="button" class="btn btn-dark btn-secondary d-flex" id="modalButton"
-                        aria-expanded="false">
+                    <button type="button" class="btn btn-dark btn-secondary d-flex" id="modalButton" aria-expanded="false">
                         <img class="mx-1" src="../deps/icons/basket2-fill.svg" alt="Catalog Icon" width="24"
                             height="24">
                         <span>0</span>
@@ -175,15 +175,13 @@
                                                     <div class="col p-0">
                                                         <div class="input-group">
                                                             <span class="input-group-btn">
-                                                                <button type="button"
-                                                                    class="btn btn-dark btn-sm decrement"
+                                                                <button type="button" class="btn btn-dark btn-sm decrement"
                                                                     data-cart-id="" data-cart-change-url="">-</button>
                                                             </span>
                                                             <input type="text" class="form-control number" value="1"
                                                                 readonly>
                                                             <span class="input-group-btn">
-                                                                <button type="button"
-                                                                    class="btn btn-dark btn-sm increment"
+                                                                <button type="button" class="btn btn-dark btn-sm increment"
                                                                     data-cart-id="" data-cart-change-url="">+</button>
                                                             </span>
                                                         </div>
@@ -228,42 +226,48 @@
                 </div>
                 <div class="col-lg-10">
                     <!-- Контент на странице -->
-                    <div class="container mt-5">
-                        <div class="card mb-4 custom-shadow">
-                            <div class="row">
-                                <!-- Миниатюры -->
-                                <div class="col-md-4">
-                                    <img src="../deps/images/goods/set of tea table and three chairs.jpg"
-                                        class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal1">
-                                </div>
-                                <div class="col-md-4 ">
-                                    <p class="product_id mt-3">id: 002654</p>
-                                </div>
-                                <!-- Увеличить изображение в модальном окне -->
-                                <div class="modal fade" id="imageModal1" tabindex="-1"
-                                    aria-labelledby="imageModal1Label" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="imageModal1Label">Изображение 1</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Закрыть"></button>
+                    <div class="row">
+                        <div class="container mt-5">
+                            <div class="row justify-content-center">
+                                <div class="col-md-9 bg-white p-4 mb-5 mx-2 rounded custom-shadow">
+                                    <h2 class="text-center mb-4">Регистрация</h2>
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="firstName" class="form-label">Имя*</label>
+                                                <input type="text" class="form-control" id="firstName"
+                                                    placeholder="Введите ваше имя" required>
                                             </div>
-                                            <div class="modal-body">
-                                                <img src="../deps/images/goods/set of tea table and three chairs.jpg"
-                                                    class="img-fluid" alt="Изображение 1">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="lastName" class="form-label">Фамилия*</label>
+                                                <input type="text" class="form-control" id="lastName"
+                                                    placeholder="Введите вашу фамилию" required>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="username" class="form-label">Имя пользователя*</label>
+                                                <input type="text" class="form-control" id="username"
+                                                    placeholder="Введите ваше имя пользователя" required>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="email" class="form-label">Email*</label>
+                                                <input type="email" class="form-control" id="email"
+                                                    placeholder="Введите ваш email" required>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="password1" class="form-label">Пароль*</label>
+                                                <input type="password" class="form-control" id="password1"
+                                                    placeholder="Введите пароль" required>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="password2" class="form-label">Подтверждение пароля*</label>
+                                                <input type="password" class="form-control" id="password2"
+                                                    placeholder="Подтвердите пароль" required>
                                             </div>
                                         </div>
-                                    </div>
+                                        <button type="submit"
+                                            class="btn btn-dark btn-block">Зарегистрироваться</button>
+                                    </form>
                                 </div>
-                            </div>
-                            <!-- Описание товара -->
-                            <div class="card-body">
-                                <p class="card-text">Цена: <strong>150.00 $</strong></p>
-                                <h5 class="card-title">Чайный столик и три стула</h5>
-                                <p class="card-text">Комплект из трёх стульев и дизайнерский столик для гостинной
-                                    комнаты.</p>
-                                <a href="#" class="btn btn-dark add-to-cart">Добавить в корзину</a>
                             </div>
                         </div>
                     </div>

@@ -51,7 +51,7 @@
                             <a class="nav-link  text-white" href="carts/cart.html">Kori</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  text-white" href="users/login.html">Kirjautu sisään</a>
+                            <a class="nav-link  text-white" href="{% url "user:login" %}">Kirjaudu sisään</a>
                         </li>
                         <li class="nav-item dropdown ">
                             <a class="nav-link dropdown-toggle text-white" href="#" role="button"
@@ -60,13 +60,13 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item  text-white" href="carts/cart.html">Kori</a></li>
-                                <li><a class="dropdown-item  text-white" href="users/profile.html">Oma ikkuna</a>
+                                <li><a class="dropdown-item  text-white" href="{% url "user:profile" %}">Oma sivu</a>
                                 </li>
                                 <li><a class="dropdown-item  text-white" href="{% url "admin:index" %}">Admin </a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item  text-white" href="#">Kirjaudu ulos</a></li>
+                                <li><a class="dropdown-item  text-white" href="{% url "user:logout" %}">Kirjaudu ulos</a></li>
                             </ul>
                         </li>
                     </ul>
