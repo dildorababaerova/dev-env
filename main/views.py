@@ -1,13 +1,12 @@
 from django.shortcuts import render
 
-from goods.models import Category
 
 def index(request):
 
     
     context = {
         'title': 'Savesta -Etusivu',
-        'content': 'SAVESTASSA TEHTYJÄ TUOTTEITA',
+        'content': 'SAVESTA',
         
         }
     return render(request, 'main/index.html', context) 
