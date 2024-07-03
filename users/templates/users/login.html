@@ -9,7 +9,9 @@
                 <h2 class="text-center mb-4">Luo tili</h2>
                 <form action= "{% url "user:login" %}" method="post"> 
                     {% csrf_token %}
-
+                    {% comment %} {% if form.non_field_errors %}
+                    {{form.non_field_errors}}
+                    {% endif %} {% endcomment %}
                     <div class="mb-3">
                         <label for="id_username" class="form-label">Käyttäjän nimi</label>
                         <input 

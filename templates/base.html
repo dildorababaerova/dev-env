@@ -20,8 +20,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{% static "deps/favicon/favicon-16x16.png" %}">
     <link rel="manifest" href="{% static "deps/favicon/site.webmanifest" %}">
     <title>{{ title }}</title>
-    
-    
 </head>
 
 <body>
@@ -182,6 +180,7 @@
                 </div>
                 <div class="col-lg-10">
                     <!-- Контент на странице -->
+                     {% include "includes/notifications.html" %}
                     {% block container %}{% endblock %}
                 </div>
             </div>
