@@ -26,8 +26,8 @@
                             {% if form.first_name.errors %}
                             <div class="alert mt-4 alert-danger alert-dismissible fade show" >
                                 {{form.first_name.errors}}
-                                <button type="submit"
-                                class="btn btn-dark btn-block" action="{% url "user:login" %}" method="post">Takaisin</button>
+                                {% comment %} <button type="submit"
+                                class="btn btn-dark btn-block" action="{% url "user:login" %}" method="post">Takaisin</button> {% endcomment %}
                             </div>
                             {% endif %}
                         </div>
@@ -45,8 +45,8 @@
                             {% if form.last_name.errors %}
                             <div class="alert mt-4 alert-danger alert-dismissible fade show" >
                                 {{form.last_name.errors}}
-                                <button type="submit"
-                                class="btn btn-dark btn-block" action="{% url "user:login" %}" method="post">Takaisin</button>
+                                {% comment %} <button type="submit"
+                                class="btn btn-dark btn-block" action="{% url "user:login" %}" method="post">Takaisin</button> {% endcomment %}
                             </div>
                             {% endif %}
                         </div>
@@ -64,9 +64,9 @@
                             {% if form.username.errors %}
                             <div class="alert mt-4 alert-danger alert-dismissible fade show" >
                                 {{form.username.errors}}
-                                <button class="btn btn-dark btn-block" >
+                                {% comment %} <button class="btn btn-dark btn-block" >
                                     <a href="{% url "user:registration" %}">Takaisin</a>
-                                </button>
+                                </button> {% endcomment %}
                             </div>
                             {% endif %} 
                         </div>
@@ -84,8 +84,8 @@
                             {% if form.email.errors %}
                             <div class="alert mt-4 alert-danger alert-dismissible fade show" >
                                 {{form.email.errors}}
-                                <button type="submit"
-                                class="btn btn-dark btn-block" action="{% url "user:login" %}" method="post">Takaisin</button>
+                                {% comment %} <button type="submit"
+                                class="btn btn-dark btn-block" action="{% url "user:login" %}" method="post">Takaisin</button> {% endcomment %}
                             </div>
                             {% endif %}
                         </div>
@@ -103,8 +103,8 @@
                             {% if form.password1.errors %}
                             <div class="alert mt-4 alert-danger alert-dismissible fade show" >
                                 {{form.password1.errors}}
-                                <button type="submit"
-                                class="btn btn-dark btn-block" action="{% url "user:login" %}" method="post">Takaisin</button>
+                                {% comment %} <button type="submit"
+                                class="btn btn-dark btn-block" action="{% url "user:login" %}" method="post">Takaisin</button> {% endcomment %}
                             </div>
                             {% endif %}
                         </div>
@@ -122,13 +122,13 @@
                             {% if form.password2.errors %}
                             <div class="alert mt-4 alert-danger alert-dismissible fade show" >
                                 {{form.password2.errors}}
-                                <button type="submit"
-                                class="btn btn-dark btn-block" action="{% url "user:login" %}" method="post">Takaisin</button>
+                                {% comment %} <button type="button"
+                                class="btn btn-dark btn-block" action="{% url "user:login" %}" method="post">Takaisin</button> {% endcomment %}
                             </div>
                             {% endif %}
                         </div>
                     </div>
-                    <button type="submit"
+                    <button type="button"
                         class="btn btn-dark btn-block">Rekisteröi</button>
                         
                 </form>

@@ -5,8 +5,5 @@ from .models import User
 # admin.site.register(Category)
 # admin.site.register(Product)
 
-@admin.register(User)
-class UserAdmin(admin.ModelAdmin):
-    users_image = ('img_name', 'image')
-    
+admin.site.register(User)
 

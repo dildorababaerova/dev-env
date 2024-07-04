@@ -48,15 +48,7 @@ def registration(request):
 
 
 def logout(request):
-    logout = auth.logout(request)
-    
-    if logout:
-        context = {
-            'title': 'Kirjoitettu ulos',
-            'content':'Olet kirjoittanut ulos',
-            
-        }
-        return render(request, 'main/index.html', context)
+    auth.logout(request)
     return redirect(reverse('main:index'))
 
 def profile(request):
