@@ -12,8 +12,12 @@
                     {% comment %} {% if form.non_field_errors %}
                     {{form.non_field_errors}}
                     {% endif %} {% endcomment %}
+
+                    {% comment %} {% if request.GET.next %}
+                        <input type="hidden" name="next" value="{{request.GET.next}}">
+                    {% endif %} {% endcomment %}
                     <div class="mb-3">
-                        <label for="id_username" class="form-label">Käyttäjän nimi</label>
+                        <label for="id_username" class="form-label">Käyttäjän nimi</label>      
                         <input 
                         type="text" 
                         class="form-control" 
