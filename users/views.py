@@ -18,8 +18,8 @@ def login(request):
                 auth.login(request, user)
                 messages.success(request, f"{username}, Olet kirjoittanut sisään")
 
-                # if request.POST.get('next', None):
-                #     return HttpResponseRedirect(request.POST.get('next'))
+                if request.POST.get('next', None):
+                    return HttpResponseRedirect(request.POST.get('next'))
                 
                 return HttpResponseRedirect(reverse('main:index'))
     else:
