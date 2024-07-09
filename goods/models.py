@@ -24,8 +24,9 @@ class Product(models.Model):
 
 
     class Meta:
-        verbose_name = 'Tuote'
-        verbose_name_plural = 'Tuotteet'
+        db_table = 'product'
+        verbose_name = 'tuote'
+        verbose_name_plural = 'tuotteet'
         ordering = ("id",) 
 
     def __str__(self):
