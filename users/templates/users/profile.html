@@ -139,9 +139,11 @@
                         {% include "carts/includes/included_cart.html" %}
                         <!-- Закончилась разметка корзины -->
                     </div>
-                    <a class="btn btn-dark" href="../orders/create_order.html">
-                        Tilaus
-                    </a>
+                    {% if carts %}
+                        <a class="btn btn-dark" href="orders/create_order.html">
+                            Tee tilaus
+                        </a>
+                    {% endif %}
                 </div>
             </div>
             <!-- Оформленные заказы -->
