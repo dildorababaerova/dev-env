@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% load carts_tags %}
+
+
 {% block container %}
 <div class="row">
     <div class="container mt-5">
@@ -129,21 +132,22 @@
             <!-- Корзина -->
             <div class="col-md-7">
                 <div class=" bg-white p-4 mb-4 mx-2 rounded custom-shadow">
-                    <h3 class="text-center mb-4">Корзина</h3>
+                    <h3 class="text-center mb-4">Kori</h3>
                     <div class="container" id="cart-items-container">
                         <!-- Разметка корзины -->
+                        {% user_carts request as carts %}
                         {% include "carts/includes/included_cart.html" %}
                         <!-- Закончилась разметка корзины -->
                     </div>
                     <a class="btn btn-dark" href="../orders/create_order.html">
-                        Оформить заказ
+                        Tilaus
                     </a>
                 </div>
             </div>
             <!-- Оформленные заказы -->
             <div class="col-md-12">
                 <div class=" bg-white p-4 mb-4 mx-2 rounded custom-shadow">
-                    <h3 class="text-center mb-4">Мои заказы</h3>
+                    <h3 class="text-center mb-4">Minun tilaukset</h3>
                     <!-- Разметка заказов -->
                     <div class="container">
                         <div class="accordion" id="accordionExample">
