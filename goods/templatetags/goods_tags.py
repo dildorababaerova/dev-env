@@ -17,3 +17,9 @@ def change_param(context, **kwargs):
     query = context['request'].GET.dict()
     query.update(kwargs)
     return urlencode(query)
+
+
+
+
+
+
