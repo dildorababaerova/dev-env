@@ -43,14 +43,16 @@
             <h5 class="card-title">{{ product.name }}</h5>
             <p class="card-text">{{ product.description }}</p>
 
-            <a href="{% url "cart:cart_add" product.slug %}" 
-            class="btn btn-dark add-to-cart">
-            {% comment %} <a href="{% url "cart:cart_add" %}" 
-            class="btn btn-dark add-to-cart"
-            data-product-id="{{product.id}}">
-            {% csrf_token %} {% endcomment %}
-            Lisä koriin</a>
-        </div>
+            
+            <a 
+                href="{% url "cart:cart_add"  %}" 
+                class="btn btn-dark add-to-cart"
+                data-product-id="{{product.id}}"
+            >
+                {% csrf_token %}
+                Lisä koriin
+            </a>
+    </div>
     </div>
 </div>
 

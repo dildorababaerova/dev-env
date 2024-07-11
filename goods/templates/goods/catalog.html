@@ -108,17 +108,15 @@
                         <p><strong>{{ product.price }}€</strong></p> 
                     {% endif %}
 
-                    <a href="{% url 'cart:cart_add' product.slug %}" class="btn add-to-cart">
-                        <img class="mx-1" src="{% static 'deps/icons/kori.png' %}" alt="Catalog Icon"
-                            width="32" height="32">
-                    </a>
                      
-                    {% comment %} <a href="{% url "cart:cart_add" %}" class="btn add-to-cart"
-                    data-product-id="{{ product.id }}">
-                    {% csrf_token %}
+                    <a 
+                        href="{% url "cart:cart_add"  %}" class="btn add-to-cart"
+                        data-product-id="{{ product.id }}"
+                    >
+                        {% csrf_token %}
                         <img class="mx-1" src="{% static 'deps/icons/kori.png' %}" alt="Catalog Icon"
-                            width="32" height="32">
-                    </a> {% endcomment %}
+                        width="32" height="32">
+                    </a> 
                 </div>
             </div>
         </div>

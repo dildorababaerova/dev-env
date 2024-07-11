@@ -33,7 +33,7 @@ class Product(models.Model):
         return f'{self.name} Määrä - {self.quantity} Hinta - {self.price}'
     
     def display_id(self):
-        return f'{25225+self.id:05}' 
+        return f'{self.id:05}' 
 
     def sell_price(self):
         if self.discount_price:
